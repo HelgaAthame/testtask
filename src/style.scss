@@ -9,12 +9,25 @@
   align-items: center;
 }
 
+@mixin flexcenter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin h2 {
+  font-family: 'Bold';
+  font-size: 2rem;
+  direction: rtl;
+}
+
 $pink: #F15B62;
 $button-font: 1.2rem;
 $menu-font: 1.3rem;
 
 body {
   margin: 0 auto;
+  overflow-x: hidden;
   @include flexcol;
   .header {
     background-image: url('./assets/header_background.png');
@@ -24,6 +37,7 @@ body {
     .header__wrapper {
       height: 43vw;
       background: linear-gradient(180deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0) 100%);
+      @include flexcol;
       .nav {
         @include flexbetween;
         .nav__left {
@@ -32,7 +46,7 @@ body {
           .nav__button-and-select {
             @include flexbetween;
             .nav__main-button {
-              width: 140px;
+              width: 150px;
               height: 50px;
               background: $pink;
               border-radius: 80px;
@@ -42,9 +56,8 @@ body {
               font-size: $button-font;
             }
             .nav__select {
-              padding: 10px 20px;
+              padding: 10px 25px;
               @include flexbetween;
-              border-right: 1px solid white;
               .nav__triangle {
                 width: 20px;
                 border-radius: 5px;
@@ -68,19 +81,185 @@ body {
             }
           }
           .nav__icons {
+            border-left: 1px solid white;
+            border-right: 1px solid white;
+            @include flexbetween;
+            padding: 0px 15px;
             .nav__loupe {
-
+              .nav__loupe-icon {
+                padding: 0 10px;
+                img {
+                  width: 1.8vw;
+                  height: 1.8vw;
+                }
+              }
+              .nav__loupe-title {
+                color: white;
+                font-family: 'Bold';
+                font-size: 0.75rem;
+                text-align: center;
+              }
             }
             .nav__bell {
-
+              .nav__bell-icon {
+                padding: 0 10px;
+                img {
+                  width: 1.8vw;
+                  height: 1.8vw;
+                }
+              }
+              .nav__bell-title {
+                color: white;
+                font-family: 'Bold';
+                font-size: 0.75rem;
+                text-align: center;
+              }
+            }
+          }
+          .nav__phone {
+            font-family: 'Normal';
+            font-size: $button-font;
+            color: white;
+            @include flexbetween;
+            padding: 0 12px;
+            .nav__phone-number {
+              padding: 0 10px;
+            }
+            .nav__phone-title {
+              padding: 0 10px;
             }
           }
         }
         .nav__right {
+          width: 22vw;
+          padding: 30px 80px;
+          @include flexbetween;
+          .nav__secondary-button {
+            @include flexbetween;
+            padding: 20px;
+            background: #FFFFFF;
+            border-radius: 80px;
+            width: 130px;
+            height: 50px;
+            font-size: $button-font;
+            font-family: 'Bold';
+            border-width: 2px;
+            border-color: white;
+            border-style: solid;
+          }
+          .nav__logo {
+            img {
+              width: 130px;
+            }
+          }
+        }
+      }
+      .titles {
+        color: white;
+        @include flexcol;
+        align-items:flex-end;
+        padding: 20px 18vw;
+        .titles__small-title {
+          font-family: 'Normal';
+          font-size: 1.6rem;
+          direction: rtl;
+          margin: 0;
+          text-shadow: 0px 0px 4px rgba(0, 0, 0, 0.85);
+        }
+        .titles__h1 {
+          font-size: 4rem;
+          line-height: 4.5rem;
+          font-family: 'Normal';
+          margin: 0;
+          text-align: right;
+          text-shadow: 0px 0px 4px rgba(0, 0, 0, 0.85);
+        }
+        .titles__bottom {
+          @include flexbetween;
+          font-family: 'Bold';
+          padding: 20px 0;
+          .titles__bottom-sign {
+            font-size: $button-font;
+            text-shadow: 0px 0px 4px rgba(0, 0, 0, 0.85);
+          }
+          .titles__bottom-inscription {
+            font-size: $button-font;
+            text-shadow: 0px 0px 4px rgba(0, 0, 0, 0.85);
+          }
+        }
+      }
 
+      .search {
+        align-self: center;
+        background: #FFFFFF;
+        box-shadow: 0px 0px 44px rgba(0, 0, 0, 0.09);
+        border-radius: 102px;
+        width: 38vw;
+        margin-top: 70px;
+        margin-bottom: -30px;
+        height: 90px;
+        @include flexbetween;
+        padding: 20px 25px;
+        .search__button {
+          background: #596172;
+          box-shadow: 0px 4px 14px rgba(15, 15, 15, 0.4);
+          border-radius: 51.046px;
+          width: 150px;
+          height: 50px;
+          border-width: 0;
+          color: white;
+          font-family: 'Bold';
+          font-size: $button-font;
+        }
+        .search__inscription {
+          color: #000000;
+          opacity: 0.5;
+          font-family: 'Bold';
+          font-size: 1.5rem;
+          direction: rtl;
         }
       }
     }
+  }
+
+  .one{
+    padding-top: 80px;
+    .one__header {
+      width:100vw;
+      @include flexcenter;
+      .one__h2 {
+        @include h2;
+      }
+    }
+    .one__articles {
+      width: 100vw;
+      padding: 1vw;
+      @include flexcenter;
+      article {
+        width: 7.75vw;
+        height: 11vw;
+        padding: 0.5vw 1vw;
+        margin: 0 0.75vw;
+        box-shadow: 0px 0px 44px rgba(0, 0, 0, 0.09);
+        border-radius: 24px;
+        .logo {
+          img {
+            width: 8vw;
+          }
+        }
+        .inscription {
+          margin-top: -1vw;
+          font-family: 'Normal';
+          text-align: center;
+          font-size: $button-font;
+          direction: rtl;
+        }
+      }
+    }
+  }
+
+  .two {
+
   }
 }
 
