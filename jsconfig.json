@@ -17,8 +17,13 @@
     "noEmit": true,
     "esModuleInterop": true,
     "forceConsistentCasingInFileNames": true,
+
+    "baseUrl": ".",
+    "paths": {
+      "src/*": ["./src/*"]
+    }
   },
 
   "exclude": ["node_modules"],
-  "include": ["src/**/*"],
+  "include": ["src/*"],
 }
