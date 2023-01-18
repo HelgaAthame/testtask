@@ -1,0 +1,29 @@
+{
+  "compilerOptions": {
+
+    /* Language and Environment */
+    "target": "ESNext",
+    "lib": [
+      "ESNext",
+      "DOM"
+    ],
+
+    /* Modules */
+    "module": "ESNext",
+    "moduleResolution": "NodeNext",
+    "resolveJsonModule": true,
+    "sourceMap": true,
+    "outDir": "./build",
+    "noEmit": true,
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+
+    "baseUrl": ".",
+    "paths": {
+      "src/*": ["./src/*"]
+    }
+  },
+
+  "exclude": ["node_modules"],
+  "include": ["src/*"],
+}
