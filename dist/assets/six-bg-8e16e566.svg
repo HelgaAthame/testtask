@@ -1,0 +1,27 @@
+<svg width="1440" height="160" viewBox="0 0 1440 160" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g style="mix-blend-mode:multiply">
+<mask id="mask0_0_495" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="1440" height="160">
+<rect width="1440" height="160" fill="#D9D9D9"/>
+</mask>
+<g mask="url(#mask0_0_495)">
+<g style="mix-blend-mode:hard-light" opacity="0.3">
+<ellipse cx="1061.98" cy="6.09296" rx="752.477" ry="361.223" transform="rotate(1.38962 1061.98 6.09296)" fill="#BEA7D9"/>
+</g>
+<g style="mix-blend-mode:hard-light" opacity="0.3">
+<ellipse cx="395.528" cy="75.1805" rx="752.477" ry="361.223" transform="rotate(34.1392 395.528 75.1805)" fill="#A6BDD9"/>
+</g>
+<g style="mix-blend-mode:hard-light" opacity="0.3">
+<ellipse cx="173.989" cy="106.703" rx="290.762" ry="139.579" transform="rotate(22.9814 173.989 106.703)" fill="#A6BDD9"/>
+</g>
+<g style="mix-blend-mode:hard-light" opacity="0.3">
+<ellipse cx="1354.99" cy="50.7034" rx="290.762" ry="139.579" transform="rotate(34.1392 1354.99 50.7034)" fill="#A6BDD9"/>
+</g>
+<g style="mix-blend-mode:hard-light" opacity="0.3">
+<ellipse cx="1337.99" cy="254.703" rx="290.762" ry="139.579" transform="rotate(34.1392 1337.99 254.703)" fill="#A6BDD9"/>
+</g>
+<g style="mix-blend-mode:hard-light" opacity="0.3">
+<ellipse cx="691.989" cy="178.703" rx="290.762" ry="139.579" transform="rotate(34.1392 691.989 178.703)" fill="#A6BDD9"/>
+</g>
+</g>
+</g>
+</svg>
