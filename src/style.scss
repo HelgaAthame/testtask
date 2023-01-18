@@ -163,6 +163,7 @@ body {
                 }
               }
               .nav__loupe-title {
+                white-space: nowrap;
                 color: white;
                 font-family: 'Bold';
                 font-size: 0.75rem;
@@ -178,6 +179,7 @@ body {
                 }
               }
               .nav__bell-title {
+                white-space: nowrap;
                 color: white;
                 font-family: 'Bold';
                 font-size: 0.75rem;
@@ -192,9 +194,11 @@ body {
             @include flexbetween;
             padding: 0 12px;
             .nav__phone-number {
+              white-space: nowrap;
               padding: 0 10px;
             }
             .nav__phone-title {
+              white-space: nowrap;
               padding: 0 10px;
             }
           }
@@ -1028,4 +1032,97 @@ body {
 @font-face {
   font-family: 'Normal';
   src: url('./assets/fonts/Assistant-Regular.woff') format('woff');
+}
+
+@media (max-width: 1100px) {
+  body .header .header__wrapper{
+    .nav {
+    flex-direction: column;
+    .nav__right {
+      padding-top: 0;
+      padding-bottom: 0;
+      .nav__logo {
+        img {
+          width: 80px;
+        }
+      }
+    }
+  }
+  .titles {
+    padding-top: 0;
+    padding-bottom: 0;
+    .titles__h1 {
+      display: none;
+    }
+    .titles__bottom {
+      padding-top: 0;
+      padding-bottom: 0;
+    }
+  }
+  .search {
+    margin: 0;
+  }
+}
+body {
+  .sect-one-two-wrapper {
+    .one {
+      .one__articles {
+        article {
+          height: 15vw;
+          .inscription {
+            font-size: 0.75rem;
+          }
+        }
+      }
+    }
+    .two {
+      .two__articles {
+        article {
+          .title {
+            font-size: 1rem;
+          }
+          .description {
+            font-size: 0.5rem;
+          }
+          .ancor {
+            font-size: 0.5rem;
+        }
+        }
+      }
+    }
+  }
+  .three {
+
+    height: 80vw;
+
+    .three__circles {
+      .title {
+        font-size: 1rem !important;
+      }
+      .subtitle {
+        font-size: 0.5rem !important;
+      }
+      .description {
+        font-size: 0.2rem !important;
+      }
+    }
+  }
+  .four {
+    .four__description {
+      font-size: 1rem;
+    }
+  }
+  .six {
+    height: auto;
+    flex-direction: column;
+  }
+  .footer {
+    .footer__top {
+      flex-wrap: wrap;
+    }
+    .footer__bottom {
+      flex-direction: column;
+    }
+  }
+}
 }
